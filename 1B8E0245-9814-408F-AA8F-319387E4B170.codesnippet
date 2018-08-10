@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    func parseJSON(completionHandler: @escaping CompletionHandler) {
+        let stringUrl = "&lt;#String#&gt;"
+        
+        guard let url = URL(string: stringUrl) else { return }
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
+            guard let data = data else { return }
+            do {
+                guard let jsonData = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] else { return }
+                let &lt;#object#&gt; = &lt;#Object#&gt;(json: jsonData)
+                completionHandler(&lt;#object#&gt;, nil)
+            } catch let error {
+                completionHandler(nil, error)
+            }
+        }.resume()
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>1B8E0245-9814-408F-AA8F-319387E4B170</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>with JSONSerialization</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Parse JSON</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
