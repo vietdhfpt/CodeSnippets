@@ -3,31 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>dispatchQueue</string>
+	<string>removeCellInTableView</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>extension DispatchQueue {
-    class func performActionOnMainThread(_ action: @escaping (() -&gt; Void)) {
-        if Thread.isMainThread {
-            action()
-        } else {
-            DispatchQueue.main.async {
-                action()
-            }
+	<string>func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let indexPath = IndexPath(row: indexPath.row, section: 0)
+            self.&lt;#list#&gt;.remove(at: indexPath.row)
+            self.tableView.deleteRows(at: [indexPath], with: .fade)
         }
-    }
-}</string>
+    }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>5744BDCC-75AC-4A5E-AB35-76E777482824</string>
+	<string>D225EB07-CC28-49C5-B5EB-18684D22A586</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>PerformActionOnMainThread</string>
+	<string>TableView</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Dispatch Queue</string>
+	<string>Remove Cell</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

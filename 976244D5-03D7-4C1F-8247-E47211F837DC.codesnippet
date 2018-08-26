@@ -7,16 +7,16 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>typealias JSON = Dictionary&lt;AnyHashable, Any&gt;</string>
+	<string></string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>A2D93DC8-2CE0-4C63-A544-66E7ECAFAEE0</string>
+	<string>976244D5-03D7-4C1F-8247-E47211F837DC</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>JSON Define</string>
+	<string></string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

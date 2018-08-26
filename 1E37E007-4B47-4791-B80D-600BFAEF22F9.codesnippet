@@ -2,21 +2,25 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>ext</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>typealias JSON = Dictionary&lt;AnyHashable, Any&gt;</string>
+	<string>extension &lt;#ViewController#&gt;: &lt;#Implement#&gt; {
+    
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>A2D93DC8-2CE0-4C63-A544-66E7ECAFAEE0</string>
+	<string>1E37E007-4B47-4791-B80D-600BFAEF22F9</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>JSON Define</string>
+	<string>extension</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
